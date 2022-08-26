@@ -1,0 +1,123 @@
+@import "mixin.scss";
+@import "variables.scss";
+.first{
+	margin-top: 100px;
+}
+.mt-4{
+	margin-top: 40px;
+}
+.member-col {
+	background-color: #eeeeee;
+	padding-top: 40px;
+	position: relative;
+	overflow: hidden;
+	&:hover{
+		.member-content{
+			opacity: 1;
+			visibility: visible;
+			@include transition(0.3s ease-in-out);
+		}
+	}
+	.member-content{
+		bottom: 0;
+		left: 0;
+		padding: 10px 20px;
+		position: absolute;
+		right: 0;
+		background-color: #dddddd;
+		@include transition(0.3s ease-in-out);
+		opacity: 0;
+		visibility: hidden;
+		h4{
+			margin-bottom: 0;
+		}
+		.designation{
+			font-size: 13px;
+		}
+		ul{
+			display: flex;
+			justify-content: space-between;
+			margin: 10px 0 0 0;
+			li{
+				display: inline-block;
+				i{
+					border-radius: 50%;
+					color: #ffffff;
+					display: inline-block;
+					height: 30px;
+					line-height: 30px;
+					text-align: center;
+					width: 30px;
+					&.fa-facebook{
+						background-color: #3b5998;
+					}
+					&.fa-twitter{
+						background-color: #00acee;
+					}
+					&.fa-instagram{
+						background-color: #3f729b;
+					}
+					&.fa-pinterest{
+						background-color: #c8232c;
+					}
+				}
+			}
+		}
+	}
+}
+.hover-effect-1{
+	.member-content{
+		bottom: -50px;
+	}
+	&:hover{
+		.member-content{
+			bottom: 0;
+		}
+	}
+}
+.hover-effect-2{
+	background-color: #ffffff;
+	.member-content{
+		bottom:0;
+		top: 0;
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		justify-content: center;
+		padding: 30px;
+		z-index: 1;
+		background-color: #ee9234;
+		color: #ffffff;
+		h4{
+			color: #ffffff;
+		}
+		&::after{
+			border: 4px double #eeeeee;
+			bottom: 10px;
+			content: "";
+			display: block;
+			left: 10px;
+			position: absolute;
+			right: 10px;
+			top: 10px;
+			border-radius: 6px;
+			z-index: -1;
+		}
+		ul{
+			li{
+				i{
+					border-radius: 0;
+					width: 35px;
+					height: 35px;
+					line-height: 35px;
+					margin-top: 10px;
+					@include transition(0.1s ease-in-out);
+					&:hover{
+						@include transition(0.1s ease-in-out);
+						opacity: 0.75;
+					}
+				}
+			}
+		}
+	}
+}

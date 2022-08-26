@@ -1,0 +1,561 @@
+@import "mixin.scss";
+@import "variables.scss";
+.mt-4{
+	margin-top: 15px;
+}
+.overflow{
+	overflow: hidden;
+}
+/*======================================
+=            hover effect-1            =
+======================================*/
+.new-hover-effect-1-column {
+	border-radius: 50%;
+	overflow: hidden;
+	position: relative;
+	img{
+		border-radius: 50%;
+	}
+	.new-hover-effect-1-content {
+		align-items: center;
+		background-color: rgb(238,146,52);
+		border-radius: 50%;
+		bottom: 0;
+		display: flex;
+		justify-content: center;
+		left: auto;
+		opacity: 0;
+		position: absolute;
+		right: -100%;
+		text-align: center;
+		top: 0;
+		@include transition( 0.4s linear all);
+		visibility: hidden;
+		width: 100%;
+		@include transform(rotateY(90deg));
+		transform-origin: 0 50%;
+		h3{
+			color: #ffffff;
+		}
+	}
+	&:hover {
+		img{
+			transform-origin: 100% 50%;
+			@include transform(rotateY(-100deg));
+			@include transition( 0.4s linear all);
+		}
+		.new-hover-effect-1-content {
+			left: 0;
+			opacity: 1;
+			right: 0;
+			@include transition( 0.4s linear all);
+			visibility: visible;
+			@include transform(rotateY(0deg));
+		}
+	}
+}
+/*=====  End of hover effect-1  ======*/
+/*======================================
+=            hover effect-2            =
+======================================*/
+
+.new-hover-effect-2-column {
+	overflow: hidden;
+	position: relative;
+	.new-hover-effect-2-content {
+		align-items: center;
+		background-color: rgb(238,146,52);
+		bottom: 0;
+		display: flex;
+		justify-content: center;
+		left: auto;
+		opacity: 0;
+		position: absolute;
+		right: -100%;
+		text-align: center;
+		top: 0;
+		@include transition( 0.4s linear all);
+		visibility: hidden;
+		width: 100%;
+		@include transform(rotateY(90deg));
+		transform-origin: 0 50%;
+		h3{
+			color: #ffffff;
+		}
+	}
+	&:hover {
+		img{
+			transform-origin: 100% 50%;
+			@include transform(rotateY(-100deg));
+			@include transition( 0.4s linear all);
+		}
+		.new-hover-effect-2-content {
+			left: 0;
+			opacity: 1;
+			right: 0;
+			@include transition( 0.4s linear all);
+			visibility: visible;
+			@include transform(rotateY(0deg));
+		}
+	}
+}
+/*=====  End of hover effect-2  ======*/
+/*======================================
+=            hover effect-3            =
+======================================*/
+.new-hover-effect-3-column {
+	border-radius: 50%;
+	position: relative;
+	width: 300px;
+	height: 300px;
+	img{
+		border-radius: 50%;
+	}
+	.new-hover-effect-3-image{
+		align-items: center;
+		background-color: rgb(238,146,52);
+		border-radius: 50%;
+		bottom: 0;
+		opacity: 0;
+		left: 0;
+		position: absolute;
+		right: 0;
+		top: 0;
+		@include transition( 0.4s linear all);
+		width: 100%;
+		@include transform(rotateY(0deg));
+		transform-origin: 70% 40%;
+	}
+	.new-hover-effect-3-content {
+		align-items: center;
+		background-color: rgb(238,146,52);
+		border-radius: 50%;
+		bottom: 0;
+		display: flex;
+		justify-content: center;
+		left: 0;
+		position: absolute;
+		right: 0;
+		text-align: center;
+		top: 0;
+		@include transition( 0.4s linear all);
+		width: 100%;
+		@include transform(rotateY(0deg));
+		transform-origin: 70% 40%;
+		h3{
+			color: #ffffff;
+		}
+	}
+	&:hover {
+		.new-hover-effect-3-image{
+			@include transition( 0.4s linear all);
+			@include transform(rotate(-90deg));
+			opacity: 1;
+		}
+	}
+}
+/*=====  End of hover effect-3  ======*/
+/*======================================
+=            hover effect-4            =
+======================================*/
+.new-hover-effect-4-column {
+	overflow: hidden;
+	position: relative;
+	.new-hover-effect-4-content {
+		align-items: center;
+		bottom: 0;
+		color: #ffffff;
+		display: flex;
+		justify-content: center;
+		opacity: 0;
+		padding: 20px;
+		position: absolute;
+		text-align: center;
+		top: 0;
+		transition: 0.8s linear all;
+		z-index: 1;
+	}
+	.new-hover-effect-4-image{
+		&::before,&::after, .new-hover-effect-4-span {
+			background-color: #EE9234;
+			content: "";
+			height: 33.33%;
+			left: 0;
+			position: absolute;
+			right: 0;
+			top: 0;
+			transform: scaleY(0);
+			transition: 0.3s linear all;
+			width: 100%;
+		}
+		&::after{
+			top: 33.333%;
+		}
+		.new-hover-effect-4-span{
+			bottom: 0;
+			top: auto;
+		}	
+		&:hover{
+			.new-hover-effect-4-content{
+				opacity: 1;
+				
+			}
+			&::before,&::after,.new-hover-effect-4-span {
+				transform: scaleY(1);
+				transition: 0.3s linear all;
+			}
+		}
+	}
+}
+/*=====  End of hover effect-4  ======*/
+/*======================================
+=            hover effect-5            =
+======================================*/
+.new-hover-effect-5-column {
+	overflow: hidden;
+	position: relative;
+	.new-hover-effect-5-content {
+		align-items: center;
+		bottom: 0;
+		color: #ffffff;
+		display: flex;
+		justify-content: center;
+		opacity: 0;
+		padding: 20px;
+		position: absolute;
+		text-align: center;
+		top: 0;
+		transition: 0.8s linear all;
+		z-index: 1;
+	}
+	.new-hover-effect-5-image{
+		&::before,&::after, .new-hover-effect-5-span {
+			background-color: #EE9234;
+			content: "";
+			height: 100%;
+			left: 0;
+			position: absolute;
+			right: 0;
+			top: 0;
+			transform: scaleX(0);
+			transition: 0.3s linear all;
+			width: 33.33%;
+		}
+		&::after{
+			left: 33.333%;
+		}
+		.new-hover-effect-5-span{
+			right: 0;
+			left: auto;
+		}	
+		&:hover{
+			.new-hover-effect-5-content{
+				opacity: 1;
+				
+			}
+			&::before,&::after,.new-hover-effect-5-span {
+				transform: scaleX(1);
+				transition: 0.3s linear all;
+			}
+		}
+	}
+}
+/*=====  End of hover effect-5  ======*/
+/*======================================
+=            hover effect-6            =
+======================================*/
+.new-hover-effect-6-column {
+	overflow: hidden;
+	position: relative;
+	.new-hover-effect-6-content {
+		align-items: center;
+		border: 2px solid #ffffff;
+		bottom: 20px;
+		color: #ffffff;
+		display: flex;
+		justify-content: center;
+		left: 20px;
+		opacity: 0;
+		padding: 20px;
+		position: absolute;
+		right: 20px;
+		text-align: center;
+		top: 20px;
+		transition: 0.8s linear all;
+		z-index: 1;
+	}
+	.new-hover-effect-6-image{
+		&::after {
+			background-color: #EE9234;
+			border-radius: 50%;
+			bottom: 0;
+			content: "";
+			left: 0;
+			opacity: 0;
+			position: absolute;
+			top: 0;
+			top: 0;
+			transition: 0.3s linear all;
+			visibility: hidden;
+		}
+		&:hover{
+			.new-hover-effect-6-content{
+				opacity: 1;
+			}
+			&::after{
+				border-radius: 0;
+				box-shadow: 0 0 0 100vw #EE9234, 0 0 0 100vh #EE9234;
+				opacity: 1;
+				transition: 0.3s linear all;
+				visibility: visible;
+			}
+		}
+	}
+}
+/*=====  End of hover effect-6  ======*/
+/*======================================
+=            hover effect-7            =
+======================================*/
+.new-hover-effect-7-column {
+	overflow: hidden;
+	position: relative;
+	.new-hover-effect-7-content {
+		align-items: center;
+		bottom: 0;
+		color: #ffffff;
+		display: flex;
+		justify-content: center;
+		opacity: 0;
+		padding: 20px;
+		position: absolute;
+		text-align: center;
+		top: 0;
+		transition: 0.8s linear all;
+		z-index: 1;
+	}
+	.new-hover-effect-7-image{
+		&::before,&::after, .new-hover-effect-7-span {
+			background-color: #EE9234;
+			content: "";
+			height: 100%;
+			left: 0;
+			position: absolute;
+			right: 0;
+			top: 0;
+			transform: scaleX(0) skewX(90deg);
+			transition: 0.3s linear all;
+			width: 33.33%;
+		}
+		&::after{
+			left: 33.333%;
+		}
+		.new-hover-effect-7-span{
+			right: 0;
+			left: auto;
+		}	
+		&:hover{
+			.new-hover-effect-7-content{
+				opacity: 1;
+			}
+			&::before,&::after,.new-hover-effect-7-span {
+				transform: scaleX(1) skewX(0deg);
+				transition: 0.3s linear all;
+
+			}
+		}
+	}
+}
+/*=====  End of hover effect-7  ======*/
+/*======================================
+=            hover effect-8            =
+======================================*/
+.new-hover-effect-8-column {
+	overflow: hidden;
+	position: relative;
+	.new-hover-effect-8-content {
+		align-items: center;
+		background-color: rgba(0,0,0,0.62);
+		bottom: 0;
+		color: #ffffff;
+		display: flex;
+		left: 20px;
+		opacity: 0;
+		padding: 20px;
+		position: absolute;
+		right: 20px;
+		text-align: center;
+		top: 50%;
+		transform: translateY(-50%) skew(-50deg);
+		transition: 0.3s linear all;
+		z-index: 1;
+		p{
+			margin: 0;
+		}
+	}
+	.new-hover-effect-8-image{
+
+		&:hover{
+			.new-hover-effect-8-content{
+				opacity: 1;
+				transform: translateY(-50%) skew(0deg);
+			}
+			
+		}
+	}
+}
+/*=====  End of hover effect-8  ======*/
+/*======================================
+=            hover effect-9            =
+======================================*/
+.new-hover-effect-9-column {
+	overflow: hidden;
+	position: relative;
+	.new-hover-effect-9-content {
+		align-items: center;
+		bottom: 0;
+		color: #ffffff;
+		display: flex;
+		left: 0;
+		opacity: 0;
+		padding: 20px;
+		position: absolute;
+		right:0;
+		text-align: center;
+		top: 0;
+		transition: 0.3s linear all;
+		z-index: 1;
+		flex-direction: column;
+		justify-content: center;
+		li{
+			display: inline-block;
+			margin-right: 5px;
+			margin-top: 10px;
+			a{
+				background-color: #fff;
+				border-radius: 3px;
+				display: block;
+				height: 30px;
+				line-height: 30px;
+				width: 30px;
+			}
+		}
+		&::after,&::before {
+			position: absolute;
+			content: "";
+			background-color: #ee9234;
+			top: 0;
+			bottom: 0;
+			-webkit-clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+			clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+			left: 0;
+			right: 0;
+			width: 100%;
+			height: 100%;
+			z-index: -1;
+			transition: 0.3s linear all;
+			width: 20px;
+			height: 20px;
+		}
+		&::before {
+			background-color: #000000;
+
+			-webkit-clip-path: polygon(0 0, 0% 100%, 100% 0);
+			clip-path: polygon(0 0, 0% 100%, 100% 0);
+		}
+		&::after{
+			left: auto;
+			right: 0;
+		}
+	}
+	.new-hover-effect-9-image{
+		&:hover{
+			.new-hover-effect-9-content{
+				opacity: 1;
+				transition: 0.3s linear all;
+				&::after,&::before {
+					width: 100%;
+					height: 100%;
+				}
+			}
+			
+		}
+	}
+}
+/*=====  End of hover effect-9  ======*/
+
+/*=======================================
+=            hover effect-10            =
+=======================================*/
+.new-hover-effect-10-column {
+	overflow: hidden;
+	position: relative;
+	.new-hover-effect-10-content {
+		align-items: center;
+		background-color: #000000;
+		bottom: 0;
+		color: #ffffff;
+		display: flex;
+		left: 0;
+		opacity: 0;
+		padding: 20px;
+		position: absolute;
+		right:0;
+		text-align: center;
+		top: 0;
+		transition: 0.3s linear all;
+		z-index: 1;
+		flex-direction: column;
+		justify-content: center;
+		li{
+			display: inline-block;
+			margin-right: 5px;
+			margin-top: 10px;
+			a{
+				background-color: #fff;
+				border-radius: 3px;
+				display: block;
+				height: 30px;
+				line-height: 30px;
+				width: 30px;
+			}
+		}
+		&::after{
+			position: absolute;
+			content: "";
+			background-color: #ee9234;
+			top: 0;
+			bottom: 0;
+			-webkit-clip-path: polygon(100% 0, 49% 51%, 100% 100%);
+			clip-path: polygon(100% 0, 49% 51%, 100% 100%);
+			left: 0;
+			right: 0;
+			width: 100%;
+			height: 100%;
+			z-index: -1;
+			transition: 0.3s linear all;
+			width: 20px;
+			height: 20px;
+		}
+		
+		&::after{
+			left: auto;
+			right: 0;
+		}
+	}
+	.new-hover-effect-10-image{
+		&:hover{
+			.new-hover-effect-10-content{
+				opacity: 1;
+				transition: 0.3s linear all;
+				&::after{
+					width: 100%;
+					height: 100%;
+				}
+			}
+			
+		}
+	}
+}
+/*=====  End of hover effect-10  ======*/
+
+

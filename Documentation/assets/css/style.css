@@ -1,0 +1,118 @@
+body{
+	background-color: #f4f4f4;
+	/* font-family: "Poppins",sans-serif; */
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.8;
+	font-weight: 300;
+	color: #555555;
+}
+.mwb-fonts-link{
+	text-decoration: underline;
+	font-weight: bold;
+	color:  #555555;
+}
+a:hover{
+	color: #444444;
+}
+section{
+	padding: 6px 0;
+}
+/*===================================
+=            page header            =
+===================================*/
+.mwb-page-header {
+	border-bottom: 1px solid #cccccc;
+	padding: 20px 0;
+}
+.mwb-page-header  .mwb-page-header-heading {
+	margin: 0;
+}
+/*=====  End of page header  ======*/
+/*==================================
+=            navigation            =
+==================================*/
+.mwb-navbar {
+	background-color: #ee9234;
+	margin-left: -15px;
+	height: 100vh;
+}
+.mwb-navbar ul {
+	margin: 0;
+}
+.mwb-navbar ul li {
+	border-bottom: 1px solid #ffffff;
+	line-height: 1.8;
+}
+.mwb-navbar ul li:last-child{
+	border-bottom:none;
+}
+.mwb-navbar ul li i {
+	margin-right: 20px;
+}
+.mwb-navbar ul li a {
+	color: #ffffff;
+	display: block;
+	font-weight: 500;
+	padding: 12px 15px;
+}
+.mwb-navbar ul li a:hover,.mwb-navbar ul li a:focus{
+	text-decoration: none;
+	color: #ffffff;
+	transition: 0.3s linear all;
+	outline: 0;
+}
+/*=====  End of navigation  ======*/
+/*====================================
+=            main content            =
+====================================*/
+.mwb-doc-heading {
+	border-bottom: 1px solid #cccccc;
+	margin: 25px 0;
+	padding-bottom: 15px;
+	font-weight: bold;
+}
+.mwb-doc-heading i {
+	margin-right: 10px;
+}
+.mwb-software-text{
+	font-weight: 600;
+}
+.mwb-general-info-listing li {
+	list-style-type: none;
+}
+.mwb-general-info-listing li i{
+	padding-right: 7px;
+}
+.mwb-general-info-listing .mwb-general-info-folder-descrpition {
+	color: #ee9234;
+}
+.mwb-pages-nomenclature-section .mwb-pages-nomenclature-listing,
+.mwb-pages-nomenclature-section .mwb-pages-nomenclature-listing  li {
+	padding-left: 10px;
+}
+.mwb-file-structrue-section .mwb-file-structure-img {
+	margin-bottom: 30px;
+}
+.mbw-file-name {
+	font-weight: 500;
+	margin-left: 10px;
+}
+.mwb-travel-name {
+	font-weight: 600;
+}
+/*=====  End of main content  ======*/
+@media screen and (max-width: 576px) {
+	.mwb-navbar {
+		margin-left: -15px;
+		margin-right: -15px;
+		height: 100%;
+	}
+	.mwb-page-header .mwb-page-header-heading{
+		font-size: 25px;
+	}
+}
+@media screen and (max-width: 767px) {
+	.mwb-hidden{
+			display: none;
+	}
+}
